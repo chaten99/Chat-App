@@ -66,6 +66,10 @@ app.use(
   }),
 );
 
+app.get('/', (req, res)=> {
+  res.send("Sevrer Working");
+})
+
 app.use("/api/auth", userRouter);
 app.use("/api/messages", messageRouter);
 
